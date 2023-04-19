@@ -1,0 +1,68 @@
+body {
+    margin-top: 50px;
+    margin-left: 350px;
+}
+
+* {
+    box-sizing: border-box;
+}
+.img3 {
+    width: 100%;
+    height: 500px;
+}
+.img4{
+    width: 800px;
+    position: absolute;
+    bottom: -4%;
+}
+.game {
+    width: 67%;
+    height: 500px;
+    border: black solid 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img1 {
+    width: 9%;
+    position:absolute;
+    bottom: 8%;
+    animation: tubo 2s infinite linear ;
+}
+.img2 {
+    width: 18%;
+    position: absolute;
+    bottom: 8%;
+}
+.jump {
+    animation: jump 500ms ease-out
+}
+
+@keyframes jump {
+    0% {
+        bottom: 7%;
+    }
+    40% {
+        bottom: 160px
+    }
+
+    50% {
+        bottom: 160px
+    }
+
+    60% {
+        bottom: 160px
+    }
+    100% {
+        bottom: 7%;
+    }
+}
+@keyframes tubo {
+    from {
+        right: -72%;
+    }
+
+    to {
+        right: 100%;
+    }
+}
